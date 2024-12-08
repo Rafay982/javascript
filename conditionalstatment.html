@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>click the button to get hacked uhghggh no sorry a time based greeting</p>
+    <button onclick="myfunction()">Try it</button>
+    <p id="hour"></p>
+    <p id="greet"></p>
+    <script>
+        function myfunction() {
+            var greeting;
+            var time = new date().gethours();
+
+            if (time < 10) {
+                greeting="good morning";
+            }
+            else if (time < 20) {
+                greeting="good day";
+            }
+            else {
+                greeting="good night";
+            }
+            document.getElementById("hour").innerHTML = "current hour is :" + time;
+            document.getElementById("greet").innerHTML = greeting;
+        }
+    </script>
+</body>
+</html>

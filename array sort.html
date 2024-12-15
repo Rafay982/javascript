@@ -3,6 +3,11 @@
 <body>
     <p>multiply every element in array with 10</p>
     <p id="product_value"></p>
+    <h2>javascript array sort</h2>
+    <p>click this to ascend and other to descend</p>
+    <button onclick="ascending()">Ascending order</button>
+    <button onclick="descending()">Descending order</button>
+    <p id="result"></p>
     <script>
         var numbers = [7,99,17,8,43];
 function myfunction (num) {
@@ -10,6 +15,16 @@ function myfunction (num) {
 }
 var newarray = numbers.map(myfunction);
 document.getElementById("product_value").innerHTML = newarray;
+        document.getElementById("result").innerHTML = newarray;
+        function ascending () {
+            points.sort(function(a,b){return a - b})
+            document.getElementById("result").innerHTML = newarray;
+        }
+        function descending () {
+            points.sort(function(a,b){return b - a})
+            document.getElementById("result").innerHTML = newarray;
+        }
+
     </script>
 </body>
 </html>

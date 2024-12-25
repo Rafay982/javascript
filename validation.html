@@ -3,7 +3,7 @@
 <head>
     <script>
         function validateform() {
-            var x = document.form["myform"]["fname"].value;
+            var x = document.forms["myform"]["fname"].value;
             if (x == "") {
             alert("name must be filled out");
             return false;
@@ -15,7 +15,7 @@
 <body>
     <form name="myform" onsubmit="validateform()">
         Name: <input type="text" name="fname">
-        <input type="submit" name="submit">
+        <input type="submit" value="submit">
         <p id="message"></p>
     </form>
 </body>

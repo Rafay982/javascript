@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p>Enter a number and click on OK</p>
+    <input id="id1" type="number" min="50" max="100" required>
+    <button onclick="myfunction()">OK</button> 
+    <p>Did you know math is my favourite subject bye bye</p>
+    <p id="result"></p>
+    <script>
+        function myfunction() {
+            var inpObj = document.getElementById("id1");
+            if(!inpObj.checkvalidity()) {
+                document.getElementById("result").innerHTML = inpObj.validationMessage;
+            }
+            else {
+                document.getElementById("result").innerHTML = "Input OK";
+            }
+        }
+    </script>
+</body>
+</html>

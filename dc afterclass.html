@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <div id="mydatedisplay" onload="showtime()"></div>
+    <script>
+        function showtime() {
+            var date = new Date();
+            var year = date.getFullYear();
+            var month = date.getMonth();
+            var date =date.getDate();
+           var time = date + ":" + year + ":" + month ;
+            document.getElementById("myclockdisplay").innerText = time;
+            setTimeout(showtime);
+        }
+        showtime();
+    </script>
+</body>
+</html>

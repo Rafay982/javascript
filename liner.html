@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+   <title>simple carousel</title>
+   <style>
+    body{
+        background-color:chartreuse
+    }
+    h1{
+        text-align:center;
+        text-decoration:underline;
+        text-transform:capitalize;
+    }
+    .carousel-container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        height:300px;
+    }
+    .myslides{
+        display:none;
+        max-height: 100%;
+        max-width:100%;
+    }
+   </style>
+</head>
+<body>
+    <h1>My favourite anime character</h1>
+    <div class="carousel-container">
+        <img class="myslides" src="https://th.bing.com/th/id/OIP.bBlNy5VsNRXmkhHuUmlJmgHaEK?rs=1&pid=ImgDetMain"
+        height="300" width="300" alt="slide1">
+        <img class="myslides" src="https://th.bing.com/th/id/OIP.OfYsVyD0EwtIJA4h-BM9JwHaQc?rs=1&pid=ImgDetMain"
+        height="300" width="300" alt="slide2">
+        <img class="myslides" src="https://th.bing.com/th/id/OIP.nnfrtOJOtZf2FCttAyWjqwHaPN?rs=1&pid=ImgDetMain"
+        height="300" width="300" alt="slide3">
+
+        <script src="scriptliner.js"></script>
+    </div>
+</body>
+</html>
